@@ -1,5 +1,6 @@
 const a = false;
-if (a) {
-    require('./func');
+if (!a) {
+    const checkOddOrEven = require('./func');
+    console.log(checkOddOrEven);
 }
 console.log('성공');
