@@ -3,9 +3,9 @@ require('dotenv').config();
 module.exports = {
   "development": {
     "username": "admin",
-    "password": "nodejsbook",
+    "password": process.env.SEQUELIZE_PASSWORD,
     "database": "nodebird",
-    "host": "127.0.0.1",
+    "host": process.env.SEQUELIZE_HOST,
     "dialect": "mysql",
     "operatorAliases": false
   },
